@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Guess</title>
+  <script src="https://kit.fontawesome.com/a076d05399.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <header>
+    <section id="info-bar">
+      <div><p>Can you guess the color?</p></div>
+      <section id="difficulty">
+        <p>Changing the difficulty resets the game!</p>
+        <select name="difficulty" id="difficulty-select">
+          <option value="easy" id="easy">Easy</option>
+          <option value="medium" id="medium">Medium</option>
+          <option value="hard" id="hard">Hard</option>
+        </select>
+      </section>
+    </section>
+  </header>
+  <main>
+    <section id="table">
+      <div id="tile1"></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div id="tile2"></div>
+      <p id="score">Score: 0</p>
+      <div id="color-to-guess"><p></p></div>
+      <div id="hearts">
+        <i class="fas fa-heart" id="full-heart"></i>
+        <i class="fas fa-heart-broken" id="half-heart"></i>
+        <i class="far fa-heart" id="empty-heart"></i>
+        <p>7</p>
+      </div>
+      <div id="tile3"></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div id="tile4"></div>
+    </section>
+    <div id="game-over"></div>
+    <div id="game-over-text">
+      <p>GAME OVER</p>
+      <p>REPLAY</p>
+    </div>
+  </main>
+</body>
+</html>
